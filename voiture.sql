@@ -17,7 +17,7 @@ create table appartient
     numero_conducteur varchar(10) not null ,
     nom_conducteur varchar(50) not null ,
     adresse varchar(50) not null ,
-    voiture_id serial not null references voiture(id),
+    voiture_id integer not null references voiture(id),
     date_achat date not null,
     immatriculation varchar(7) not null,
     nom_prefecture varchar(20) not null,
